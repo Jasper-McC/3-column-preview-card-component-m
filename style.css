@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url(Fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Big Shoulder';
+    src: url(Fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
 .container{
     position: absolute;
     top: 50%;
@@ -27,11 +35,94 @@
     background-color: hsl(179, 100%, 13%);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    
 }
 button{
-    width: 50%;
-    height: 20px;
+    width: 15%;
+    height: 40px;
+    border-radius: 20px;
     padding: 10px;
     position: absolute;
     top: 50%;
+    padding: 10px;
+    border: 2px solid white;
+}
+.sedans button{
+    color: hsl(31, 77%, 52%);
+    margin: 40px;
+    position: absolute;
+    top: 270px;
+}
+.suv button{
+    color: hsl(184, 100%, 22%);
+    margin: 40px;
+    position: absolute;
+    top: 270px;
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+    margin: 40px;
+    position: absolute;
+    top: 270px;
+}
+h1{
+    padding: 40px;
+    font-family: 'Big Shoulder';
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+img{
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+.container img,h1{
+    line-height: 10px;
+}
+p{
+    margin: 40px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+button:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+@media (max-width: 940px){ /* moble veiw working, but buttons are not going transparent when hovering*/
+    .sedans{
+        width: 100%;
+        border-radius: 0px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .suv{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .luxury{
+        width: 100%;
+        border-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    button{
+        width: 50%;
+        height: 40px;
+        border-radius: 20px;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        padding: 10px;
+        border: 2px solid white;
+    }
+    button:hover{
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0px;
+    }
 }
