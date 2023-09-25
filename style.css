@@ -120,6 +120,14 @@ button:hover{
         color: white;
         border: 2px solid white;
     }
+    .suv button{
+        position: relative;
+        top: 0px;
+    }
+    .luxury button{
+        position: relative;
+        top: 0px;
+    }
     .container{
         flex-direction: column;
         width: 100%;
