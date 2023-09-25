@@ -28,3 +28,10 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+button{
+    width: 50%;
+    height: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+}
